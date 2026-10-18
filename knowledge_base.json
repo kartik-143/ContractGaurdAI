@@ -1,0 +1,66 @@
+[
+  {
+    "id": "KB-001",
+    "title": "Clear payment terms — drafting checklist",
+    "jurisdiction": "India — general contract review; drafting checklist, not legislation",
+    "source_url": "https://www.indiacode.nic.in/",
+    "topic": "payment",
+    "text": "A well-drafted payment clause should identify the amount or calculation method, invoice requirements, payment due date, currency, applicable taxes, and a process for disputing invoices. Ambiguous payment timing can create operational and collection disputes. This is a drafting checklist, not a statement of law."
+  },
+  {
+    "id": "KB-002",
+    "title": "Termination clause — drafting checklist",
+    "jurisdiction": "India — general contract review; check applicable Indian law",
+    "source_url": "https://www.indiacode.nic.in/",
+    "topic": "termination",
+    "text": "A termination clause should clearly identify termination triggers, notice periods, any cure period for remediable breach, treatment of fees already accrued, return or deletion of confidential information, and survival of provisions intended to continue. Enforceability depends on the applicable law and facts. This is a drafting checklist, not a legal conclusion."
+  },
+  {
+    "id": "KB-003",
+    "title": "Liability limitation — drafting checklist",
+    "jurisdiction": "India — general contract review; check applicable Indian law",
+    "source_url": "https://www.indiacode.nic.in/",
+    "topic": "liability",
+    "text": "Review whether a limitation-of-liability clause defines a cap, the period or fees used to calculate the cap, categories of excluded loss, and any negotiated carve-outs such as fraud, wilful misconduct, confidentiality, data protection, or intellectual property. Whether a cap or exclusion is enforceable depends on applicable law and the contract context."
+  },
+  {
+    "id": "KB-004",
+    "title": "Confidentiality — drafting checklist",
+    "jurisdiction": "India — general contract review; check applicable Indian law",
+    "source_url": "https://www.indiacode.nic.in/",
+    "topic": "confidentiality",
+    "text": "A confidentiality clause commonly defines confidential information, permitted use, who may receive it, exclusions for information already public or independently developed, legally required disclosure, security obligations, duration, and return or destruction procedures. A reviewer should check that duties are workable and appropriately scoped."
+  },
+  {
+    "id": "KB-005",
+    "title": "Data protection — review checklist",
+    "jurisdiction": "India — personal data protection; verify current Act and rules",
+    "source_url": "https://www.meity.gov.in/data-protection-framework",
+    "topic": "data protection",
+    "text": "Where a contract involves personal data, review the parties' roles, purposes of processing, security controls, incident notification, retention and deletion, subprocessors, data subject requests, cross-border transfers, and allocation of responsibilities. Applicable obligations depend on the jurisdiction, data type, and parties' roles. Confirm current legal requirements from official sources before relying on a conclusion."
+  },
+  {
+    "id": "KB-006",
+    "title": "Dispute resolution — drafting checklist",
+    "jurisdiction": "India — dispute resolution; check applicable Indian law",
+    "source_url": "https://www.indiacode.nic.in/",
+    "topic": "dispute resolution",
+    "text": "A dispute resolution clause should be checked for governing law, venue or seat, court jurisdiction or arbitration mechanism, language, number and appointment of arbitrators where applicable, escalation steps, and consistency with other contract provisions. Ambiguous or conflicting mechanisms can create uncertainty. This checklist is not a legal opinion."
+  },
+  {
+    "id": "KB-007",
+    "title": "Renewal and notice — drafting checklist",
+    "jurisdiction": "India — general contract review; check applicable Indian law",
+    "source_url": "https://www.indiacode.nic.in/",
+    "topic": "renewal",
+    "text": "For automatic renewal, identify the renewal term, deadline and method for opting out, notice delivery rules, and any price changes at renewal. Check that notice periods are visible and operationally achievable. Legal effect depends on the contract and applicable law."
+  },
+  {
+    "id": "KB-008",
+    "title": "Intellectual property ownership — drafting checklist",
+    "jurisdiction": "India — intellectual property; official Indian IP portal",
+    "source_url": "https://ipindia.gov.in/",
+    "topic": "intellectual property",
+    "text": "For work product, software, designs, or inventions, clarify background IP, newly created IP, ownership or licence scope, permitted use, third-party materials, open-source components, assignment formalities, and post-termination rights. The clause should match the parties' commercial intent and applicable law."
+  }
+]

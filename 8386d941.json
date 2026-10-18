@@ -1,0 +1,325 @@
+{
+  "id": "8386d941",
+  "filename": "sample_contract.pdf",
+  "created_at": "2026-10-18T16:49:11.392839+00:00",
+  "pages": 1,
+  "characters_extracted": 1209,
+  "clauses_reviewed": 9,
+  "risk_score": 81,
+  "risk_label": "High attention needed",
+  "findings_count": 7,
+  "high_risk_count": 3,
+  "findings": [
+    {
+      "id": "F-001",
+      "rule_id": "R-PAY-01",
+      "title": "Payment ambiguity",
+      "severity": "medium",
+      "confidence": "medium",
+      "clause": "2. PAYMENT Customer shall pay all invoices within 90 days of receipt. Provider may change fees at any time without prior notice.",
+      "matched_terms": [
+        "payment",
+        "invoice",
+        "fee",
+        "fees"
+      ],
+      "explanation": "Payment timing or calculation may need clarification. Confirm amounts, invoice requirements, due dates, taxes, and dispute handling.",
+      "suggested_revision": "Specify the amount or calculation method, invoice requirements, currency, taxes, payment deadline (for example, within 30 days of a valid invoice), and a process for disputing an invoice.",
+      "references": [
+        {
+          "id": "KB-001",
+          "title": "Clear payment terms — drafting checklist",
+          "jurisdiction": "India — general contract review; drafting checklist, not legislation",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "payment",
+          "text": "A well-drafted payment clause should identify the amount or calculation method, invoice requirements, payment due date, currency, applicable taxes, and a process for disputing invoices. Ambiguous payment timing can create operational and collection disputes. This is a drafting checklist, not a statement of law.",
+          "retrieval_score": 0.188
+        },
+        {
+          "id": "KB-002",
+          "title": "Termination clause — drafting checklist",
+          "jurisdiction": "India — general contract review; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "termination",
+          "text": "A termination clause should clearly identify termination triggers, notice periods, any cure period for remediable breach, treatment of fees already accrued, return or deletion of confidential information, and survival of provisions intended to continue. Enforceability depends on the applicable law and facts. This is a drafting checklist, not a legal conclusion.",
+          "retrieval_score": 0.056
+        }
+      ],
+      "agent_trace": [
+        "Document Agent: clause candidate extracted",
+        "Research Agent: knowledge-base passages retrieved",
+        "Risk Agent: heuristic pattern matched",
+        "Recommendation Agent: draft suggestion prepared"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "F-002",
+      "rule_id": "R-TERM-01",
+      "title": "Termination imbalance or ambiguity",
+      "severity": "high",
+      "confidence": "medium",
+      "clause": "3. TERMINATION Provider may terminate this agreement at any time without notice or reason. Customer may not terminate this agreement under any circumstances.",
+      "matched_terms": [
+        "terminate",
+        "termination"
+      ],
+      "explanation": "The termination wording may leave triggers, notice, cure periods, or post-termination duties unclear. Check whether rights are balanced and operationally workable.",
+      "suggested_revision": "Define termination triggers, written notice period, any cure period for remediable breaches, accrued payment obligations, data return/deletion, and surviving clauses.",
+      "references": [
+        {
+          "id": "KB-002",
+          "title": "Termination clause — drafting checklist",
+          "jurisdiction": "India — general contract review; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "termination",
+          "text": "A termination clause should clearly identify termination triggers, notice periods, any cure period for remediable breach, treatment of fees already accrued, return or deletion of confidential information, and survival of provisions intended to continue. Enforceability depends on the applicable law and facts. This is a drafting checklist, not a legal conclusion.",
+          "retrieval_score": 0.252
+        },
+        {
+          "id": "KB-007",
+          "title": "Renewal and notice — drafting checklist",
+          "jurisdiction": "India — general contract review; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "renewal",
+          "text": "For automatic renewal, identify the renewal term, deadline and method for opting out, notice delivery rules, and any price changes at renewal. Check that notice periods are visible and operationally achievable. Legal effect depends on the contract and applicable law.",
+          "retrieval_score": 0.044
+        }
+      ],
+      "agent_trace": [
+        "Document Agent: clause candidate extracted",
+        "Research Agent: knowledge-base passages retrieved",
+        "Risk Agent: heuristic pattern matched",
+        "Recommendation Agent: draft suggestion prepared"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "F-003",
+      "rule_id": "R-LIAB-01",
+      "title": "Liability allocation needs review",
+      "severity": "high",
+      "confidence": "medium",
+      "clause": "4. LIABILITY Provider shall have unlimited liability for all indirect and consequential damages. Customer waives all claims against Provider.",
+      "matched_terms": [
+        "liability",
+        "consequential",
+        "damages"
+      ],
+      "explanation": "Liability, indemnity, or loss exclusions can create substantial exposure if scope, caps, and carve-outs are unclear or one-sided.",
+      "suggested_revision": "Define the liability cap and its calculation, specify excluded losses, and expressly review negotiated carve-outs and indemnity scope with counsel.",
+      "references": [
+        {
+          "id": "KB-003",
+          "title": "Liability limitation — drafting checklist",
+          "jurisdiction": "India — general contract review; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "liability",
+          "text": "Review whether a limitation-of-liability clause defines a cap, the period or fees used to calculate the cap, categories of excluded loss, and any negotiated carve-outs such as fraud, wilful misconduct, confidentiality, data protection, or intellectual property. Whether a cap or exclusion is enforceable depends on applicable law and the contract context.",
+          "retrieval_score": 0.189
+        },
+        {
+          "id": "KB-007",
+          "title": "Renewal and notice — drafting checklist",
+          "jurisdiction": "India — general contract review; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "renewal",
+          "text": "For automatic renewal, identify the renewal term, deadline and method for opting out, notice delivery rules, and any price changes at renewal. Check that notice periods are visible and operationally achievable. Legal effect depends on the contract and applicable law.",
+          "retrieval_score": 0.044
+        }
+      ],
+      "agent_trace": [
+        "Document Agent: clause candidate extracted",
+        "Research Agent: knowledge-base passages retrieved",
+        "Risk Agent: heuristic pattern matched",
+        "Recommendation Agent: draft suggestion prepared"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "F-004",
+      "rule_id": "R-CONF-01",
+      "title": "Confidentiality scope needs review",
+      "severity": "medium",
+      "confidence": "medium",
+      "clause": "5. CONFIDENTIALITY Each party will protect confidential information and will not disclose it to unauthorized persons.",
+      "matched_terms": [
+        "confidential",
+        "confidentiality",
+        "disclose"
+      ],
+      "explanation": "Check the definition of confidential information, permitted recipients/use, exceptions, duration, security, and return or destruction obligations.",
+      "suggested_revision": "Define confidential information, permitted purpose and recipients, standard exclusions, legally required disclosure, security measures, duration, and return/deletion process.",
+      "references": [
+        {
+          "id": "KB-004",
+          "title": "Confidentiality — drafting checklist",
+          "jurisdiction": "India — general contract review; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "confidentiality",
+          "text": "A confidentiality clause commonly defines confidential information, permitted use, who may receive it, exclusions for information already public or independently developed, legally required disclosure, security obligations, duration, and return or destruction procedures. A reviewer should check that duties are workable and appropriately scoped.",
+          "retrieval_score": 0.237
+        },
+        {
+          "id": "KB-002",
+          "title": "Termination clause — drafting checklist",
+          "jurisdiction": "India — general contract review; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "termination",
+          "text": "A termination clause should clearly identify termination triggers, notice periods, any cure period for remediable breach, treatment of fees already accrued, return or deletion of confidential information, and survival of provisions intended to continue. Enforceability depends on the applicable law and facts. This is a drafting checklist, not a legal conclusion.",
+          "retrieval_score": 0.085
+        }
+      ],
+      "agent_trace": [
+        "Document Agent: clause candidate extracted",
+        "Research Agent: knowledge-base passages retrieved",
+        "Risk Agent: heuristic pattern matched",
+        "Recommendation Agent: draft suggestion prepared"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "F-005",
+      "rule_id": "R-DATA-01",
+      "title": "Data protection obligations may be missing",
+      "severity": "high",
+      "confidence": "medium",
+      "clause": "6. DATA HANDLING Provider may process personal data as needed to provide services. This agreement does not specify security controls, breach notification, or retention periods.",
+      "matched_terms": [
+        "personal data",
+        "breach notification"
+      ],
+      "explanation": "The clause references personal data or processing but may not clearly allocate security, incident response, retention, and party responsibilities.",
+      "suggested_revision": "Specify each party's role, processing purpose, security controls, incident notification timeline, retention/deletion, subprocessors, and applicable jurisdiction-specific requirements.",
+      "references": [
+        {
+          "id": "KB-005",
+          "title": "Data protection — review checklist",
+          "jurisdiction": "India — personal data protection; verify current Act and rules",
+          "source_url": "https://www.meity.gov.in/data-protection-framework",
+          "topic": "data protection",
+          "text": "Where a contract involves personal data, review the parties' roles, purposes of processing, security controls, incident notification, retention and deletion, subprocessors, data subject requests, cross-border transfers, and allocation of responsibilities. Applicable obligations depend on the jurisdiction, data type, and parties' roles. Confirm current legal requirements from official sources before relying on a conclusion.",
+          "retrieval_score": 0.105
+        },
+        {
+          "id": "KB-002",
+          "title": "Termination clause — drafting checklist",
+          "jurisdiction": "India — general contract review; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "termination",
+          "text": "A termination clause should clearly identify termination triggers, notice periods, any cure period for remediable breach, treatment of fees already accrued, return or deletion of confidential information, and survival of provisions intended to continue. Enforceability depends on the applicable law and facts. This is a drafting checklist, not a legal conclusion.",
+          "retrieval_score": 0.073
+        }
+      ],
+      "agent_trace": [
+        "Document Agent: clause candidate extracted",
+        "Research Agent: knowledge-base passages retrieved",
+        "Risk Agent: heuristic pattern matched",
+        "Recommendation Agent: draft suggestion prepared"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "F-006",
+      "rule_id": "R-RENEW-01",
+      "title": "Automatic renewal / notice risk",
+      "severity": "medium",
+      "confidence": "low",
+      "clause": "7. RENEWAL This agreement renews automatically for successive one-year periods unless notice is provided.",
+      "matched_terms": [
+        "renewal"
+      ],
+      "explanation": "Renewal wording may create an unexpected extension if the renewal term or opt-out deadline is not explicit.",
+      "suggested_revision": "State the renewal term, the exact opt-out deadline, permitted notice method, recipient, and any price changes on renewal.",
+      "references": [
+        {
+          "id": "KB-007",
+          "title": "Renewal and notice — drafting checklist",
+          "jurisdiction": "India — general contract review; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "renewal",
+          "text": "For automatic renewal, identify the renewal term, deadline and method for opting out, notice delivery rules, and any price changes at renewal. Check that notice periods are visible and operationally achievable. Legal effect depends on the contract and applicable law.",
+          "retrieval_score": 0.248
+        },
+        {
+          "id": "KB-002",
+          "title": "Termination clause — drafting checklist",
+          "jurisdiction": "India — general contract review; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "termination",
+          "text": "A termination clause should clearly identify termination triggers, notice periods, any cure period for remediable breach, treatment of fees already accrued, return or deletion of confidential information, and survival of provisions intended to continue. Enforceability depends on the applicable law and facts. This is a drafting checklist, not a legal conclusion.",
+          "retrieval_score": 0.083
+        }
+      ],
+      "agent_trace": [
+        "Document Agent: clause candidate extracted",
+        "Research Agent: knowledge-base passages retrieved",
+        "Risk Agent: heuristic pattern matched",
+        "Recommendation Agent: draft suggestion prepared"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "F-007",
+      "rule_id": "R-MISSING-01",
+      "title": "No clear dispute resolution clause detected",
+      "severity": "medium",
+      "confidence": "low",
+      "clause": "No matching clause was detected by the prototype.",
+      "matched_terms": [],
+      "explanation": "This automated check did not find a clear reference. The clause may be worded differently or appear in a non-extractable part of the PDF; absence is not confirmed.",
+      "suggested_revision": "Confirm the intended governing law and dispute resolution process.",
+      "references": [
+        {
+          "id": "KB-006",
+          "title": "Dispute resolution — drafting checklist",
+          "jurisdiction": "India — dispute resolution; check applicable Indian law",
+          "source_url": "https://www.indiacode.nic.in/",
+          "topic": "dispute resolution",
+          "text": "A dispute resolution clause should be checked for governing law, venue or seat, court jurisdiction or arbitration mechanism, language, number and appointment of arbitrators where applicable, escalation steps, and consistency with other contract provisions. Ambiguous or conflicting mechanisms can create uncertainty. This checklist is not a legal opinion.",
+          "retrieval_score": 0.025
+        }
+      ],
+      "agent_trace": [
+        "Document Agent: searched extracted text",
+        "Risk Agent: possible missing topic identified"
+      ],
+      "human_review_required": true
+    }
+  ],
+  "executive_summary": "The prototype reviewed 9 extracted text segments and flagged 7 items for human review. Findings are heuristic indicators, not verified legal conclusions.",
+  "priority_actions": [
+    "Review high-severity findings first.",
+    "Verify every cited source and its applicability to the contract.",
+    "Have a qualified reviewer approve any proposed changes."
+  ],
+  "limitations": [
+    "Prototype uses keyword and clause-pattern heuristics unless an LLM API key is configured.",
+    "The included knowledge base contains drafting checklists, not a verified comprehensive law database.",
+    "Scanned PDFs and OCR are not supported in this MVP.",
+    "This tool does not provide legal advice or guarantee compliance."
+  ],
+  "agent_workflow": [
+    {
+      "name": "Document Agent",
+      "status": "completed",
+      "detail": "Extracted text from 1 pages and segmented 9 clause candidates."
+    },
+    {
+      "name": "Research Agent",
+      "status": "completed",
+      "detail": "Retrieved relevant passages from the bundled knowledge base for each finding."
+    },
+    {
+      "name": "Risk Agent",
+      "status": "completed",
+      "detail": "Flagged 7 items; 3 marked high priority for review."
+    },
+    {
+      "name": "Recommendation Agent",
+      "status": "completed",
+      "detail": "Prepared draft wording suggestions for human review."
+    }
+  ],
+  "mode": "Local heuristic demo"
+}
